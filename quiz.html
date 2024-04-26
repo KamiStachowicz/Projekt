@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="content-language" content="pl">
+	<meta name="description" content=" ">
+	<meta name="keywords" content=" ">
+<head>
+<link rel="stylesheet" href="3.css">
+</head>
+<body>
+<SCRIPT LANGUAGE="JavaScript"><!-- 
+var numPyt =10; 
+var numWyb = 4; 
+var odpowiedz = new Array(10); 
+odpowiedz[0] = "d"; 
+odpowiedz[1] = "d"; 
+odpowiedz[2] = "c"; 
+odpowiedz[3] = "d"; 
+odpowiedz[4] = "c"; 
+odpowiedz[5] = "c"; 
+odpowiedz[6] = "a"; 
+odpowiedz[7] = "c"; 
+odpowiedz[8] = "c"; 
+odpowiedz[9] = "a"; 
+
+
+function zobaczWynik(form) { 
+var score = 0; 
+var currElt; 
+var currSelection; 
+for (i=0; i<numPyt; i++) { 
+currElt = i*numWyb; 
+for (j=0; j<numWyb; j++) { 
+currSelection = form.elements[currElt + j]; 
+if (currSelection.checked) { 
+if (currSelection.value == odpowiedz[i]) { 
+score++; 
+break; 
+} 
+} 
+} 
+} 
+score = Math.round(score/numPyt*100); 
+form.percentage.value = score + "%"; 
+var correctodpowiedz = ""; 
+for (i=1; i<=numPyt; i++) { 
+correctodpowiedz += i + ". " + odpowiedz[i-1] + "\r\n"; 
+} 
+form.wyniki.value = correctodpowiedz; 
+} 
+// --></SCRIPT></P> 
+
+<P><FORM NAME="quiz"></P> 
+
+<P><B>1. Która część ciała bizona jest bardziej owłosiona?</B><BR><BR> 
+
+<INPUT type=radio name="11" value="a">Bizon nie ma owłosienia<BR> 
+<INPUT type=radio name="11" value="b">Tylna<BR> 
+<INPUT type=radio name="11" value="c">Obie strony są owłosione równomiernie<BR> 
+<INPUT type=radio name="11" value="d">Przednia</P> 
+
+<P><B>2. Które zwierzęta były wykorzystywane jako zwierzęta bojowe?</B><BR><BR> 
+
+<INPUT type=radio name="111" value="a">Lwy<BR> 
+<INPUT type=radio name="111" value="b">Delfin<BR> 
+<INPUT type=radio name="111" value="c">Koza<BR> 
+<INPUT type=radio name="111" value="d">Słonie Afrykańskie</P> 
+
+<P><B>3. W którym wieku Europejczycy poraz pierwszy zobaczyli kangury?</B><BR><BR> 
+
+<INPUT type=radio name="21" value="a">W 21 wieku<BR> 
+<INPUT type=radio name="21" value="b">W 17 wieku<BR> 
+<INPUT type=radio name="21" value="c">W 18 wieku<BR> 
+<INPUT type=radio name="21" value="d">W 14 wieku</P> 
+
+<P><B>4. Co jest głównym pożywieniem pandy?</B><BR><BR> 
+
+<INPUT type=radio name="31" value="a">Liście<BR> 
+<INPUT type=radio name="31" value="b">Padlina<BR> 
+<INPUT type=radio name="31" value="c">Kora drzew<BR> 
+<INPUT type=radio name="31" value="d">Bambus</P> 
+
+<P><B>5.  Największy ptak szponiasty żyjący w Europie.</B><BR><BR> 
+
+<INPUT type=radio name="41" value="a">Orzeł przedni<BR> 
+<INPUT type=radio name="41" value="b">Orlik grubodzioby<BR> 
+<INPUT type=radio name="41" value="c">Bielik zwyczajny<BR> 
+<INPUT type=radio name="41" value="d">Jastrząb</P> 
+
+<P><B>6. Jak długi może być język mrówkojadów?</B><BR><BR> 
+
+<INPUT type=radio name="51" value="a">Do 40cm<BR> 
+<INPUT type=radio name="51" value="b">Do 80cm<BR> 
+<INPUT type=radio name="51" value="c">Do 60cm<BR> 
+<INPUT type=radio name="51" value="d">Do 20cm</P> 
+
+<P><B>7. Z jakim gatunkiem kangurów jest często mylony kangur olbrzymi?</B><BR><BR> 
+
+<INPUT type=radio name="61" value="a">Z kangurem szarym<BR> 
+<INPUT type=radio name="61" value="b">Z kangurem rudym<BR> 
+<INPUT type=radio name="61" value="c">Z kangurem zachodnim<BR> 
+<INPUT type=radio name="61" value="d">Z kangurem czarnym</P> 
+
+<P><B>8. Jakie zwierze jest najbliżej spokrewnione z Okapi?</B><BR><BR> 
+
+<INPUT type=radio name="71" value="a">Małpa<BR> 
+<INPUT type=radio name="71" value="b">Niedźwiedź<BR> 
+<INPUT type=radio name="71" value="c">Żyrafa<BR> 
+<INPUT type=radio name="71" value="d">Dziobak</P> 
+
+<P><B>9. Czym głównie żywią się rysie kanadyjskie?</B><BR><BR> 
+
+<INPUT type=radio name="81" value="a">Myszami<BR> 
+<INPUT type=radio name="81" value="b">Królikami<BR> 
+<INPUT type=radio name="81" value="c">Zającami<BR> 
+<INPUT type=radio name="81" value="d">Roślinami</P> 
+
+<P><B>10. Jakiego koloru jest futro diabła tasmańskiego?</B><BR><BR> 
+
+<INPUT type=radio name="91" value="a">Czarnego<BR> 
+<INPUT type=radio name="91" value="b">Białego<BR> 
+<INPUT type=radio name="91" value="c">Brązowego<BR> 
+<INPUT type=radio name="91" value="d">Żółtego</P> 
+
+
+
+
+
+<P align="center">
+
+<INPUT TYPE="button"  VALUE="Zobacz wynik" ONCLICK="zobaczWynik(this.form)">
+
+<br><br>
+
+<INPUT TYPE="reset"  VALUE="Wyczysc odpowiedzi">
+
+</P> 
+
+<hr size=1 color="black">
+
+<P>Twoj wynik: <INPUT TYPE="text" SIZE="7" NAME="percentage"></P> 
+
+<P>Poprawne odpowiedzi to:<BR> 
+<TEXTAREA NAME="wyniki" WRAP="virtual" ROWS="9" COLS="7"></TEXTAREA></P> 
+
+<CENTER><P></FORM></P></CENTER>
+</body>
+</html>
