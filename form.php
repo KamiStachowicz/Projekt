@@ -54,3 +54,17 @@ if(!mysqli_close($db_lnk)){
 ?>
 </body>
 </html>
+
+
+$rowsNo = mysqli_affected_rows($db_lnk);
+
+echo("Liczba dodanych rekordów: $rowsNo <br />");
+
+if(!mysqli_close($db_lnk)){
+	echo ('Wystąpił błąd podczas zamykania połączenia z serwerem MySQL');
+	echo("</body></html>");
+	exit;
+}
+?>
+</body>
+</html>
