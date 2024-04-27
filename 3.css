@@ -1,14 +1,14 @@
 body {background-color:rgb(255, 255, 255);}
 body > div{width: 960px ; min-height: 720px;position:relative; outline:1px solid #777;margin:auto;}
 div.top { height:150px; width:960px; background-color:#adadad;}
-div.stopka{height:100px; width:960px; background-color:#7A7D80;position:relative; clear:both;}
+div.stopka{height:100px; width:960px; background-color:#7a7d80d3;position:relative; clear:both;}
 div.środek{height:470px; width:560px; background-color:#FFFF99;  float:left; }
 div.prawo{height:470px; width:200px; background-color:#808080;position:relative; float:right;}
 div.lewo {height:470px; width:200px; background-color:#808080; position:relative;  float:left;}
 div > .lewo> div {width: 150px; height: 26px; background-color: #ddf; text-align: center; padding-top: 5px; margin: 5px auto;}
 .textarea {background-color:#999933; }
 a { text-align:center; margin:3; font-size: 30px;}
-h3 {text-align:center; margin:2; font-size: 35px; color:#ff2f39 ;}
+h3 {text-align:center; margin:2; font-size: 35px; color:#fffc2f ;}
 img { width:140px; height:140px; position:absolute; margin: 5px;}
 #ban{width: 140px; height:140px; position:absolute; margin: 5px; right:-0px;}
 #srodek{width: 560px; height:470px; position:absolute; margin:0px;  }
