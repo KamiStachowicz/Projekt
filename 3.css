@@ -1,7 +1,7 @@
 body {background-color:rgb(255, 255, 255);}
-body > div{width: 960px ; min-height: 720px;position:relative; outline:1px solid #777;margin:auto;}
-div.top { height:150px; width:960px; background-color:#adadad;}
-div.stopka{height:100px; width:960px; background-color:#7a7d80d3;position:relative; clear:both;}
+body > div{width: 960px ; min-height: 720px;position:relative; outline:1px solid #333333;margin:auto;}
+div.top { height:150px; width:960px; background-color:#575757;}
+div.stopka{height:100px; width:960px; background-color:#676868;position:relative; clear:both;}
 div.środek{height:470px; width:560px; background-color:#FFFF99;  float:left; }
 div.prawo{height:470px; width:200px; background-color:#808080;position:relative; float:right;}
 div.lewo {height:470px; width:200px; background-color:#808080; position:relative;  float:left;}
